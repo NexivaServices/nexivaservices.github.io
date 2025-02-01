@@ -60,6 +60,93 @@
   --surface-color: #eb1414;
   --contrast-color: #ffffff;
 }
+.projects {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.projects .section-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.projects .section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.projects .section-title p {
+  font-size: 18px;
+  color: #555;
+}
+
+.projects .project-benefits h3,
+.projects .project-domains h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.projects .project-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects .project-benefits ul li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #666;
+  position: relative;
+  padding-left: 20px;
+}
+
+.projects .project-benefits ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.projects .project-domains .domain-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.projects .project-domains .domain-list span {
+  background: #e9ecef;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+.projects .project-domains .domain-list span:hover {
+  background: #ff0000;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.row.g-4 {
+  row-gap: 40px;
+}
+
+@media (max-width: 768px) {
+  .projects .project-benefits h3,
+  .projects .project-domains h4 {
+    text-align: center;
+  }
+  .projects .project-domains .domain-list {
+    justify-content: center;
+  }
+}
+
 .float{
 	position:fixed;
 	width:60px;
