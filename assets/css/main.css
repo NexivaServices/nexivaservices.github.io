@@ -54,13 +54,30 @@
 }
 
 .accent-background {
-  --background-color: #10bc69;
+  --background-color: #bc1010;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #14eb83;
+  --surface-color: #eb1414;
   --contrast-color: #ffffff;
 }
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
 
+.my-float{
+	margin-top:16px;
+}
 /* Smooth scroll */
 :root {
   scroll-behavior: smooth;
@@ -108,10 +125,95 @@ h6 {
   font-weight: 600;
 }
 
+/* Add Neomorphic Variables */
+:root {
+  --neumorphic-shadow-outset: 
+    8px 8px 16px color-mix(in srgb, var(--surface-color), black 15%),
+    -8px -8px 16px color-mix(in srgb, var(--surface-color), white 15%);
+  --neumorphic-shadow-inset: 
+    inset 5px 5px 10px color-mix(in srgb, var(--surface-color), black 10%),
+    inset -5px -5px 10px color-mix(in srgb, var(--surface-color), white 10%);
+}
+
+/* Global Neomorphic Effects */
+.scrolled .header {
+  box-shadow: var(--neumorphic-shadow-outset);
+}
+
+/* Featured Services */
+.featured-services .service-item {
+  box-shadow: var(--neumorphic-shadow-outset);
+  border: none !important;
+  transition: all 0.3s ease;
+}
+
+.featured-services .service-item:hover {
+  box-shadow: 
+    12px 12px 24px color-mix(in srgb, var(--surface-color), black 20%),
+    -12px -12px 24px color-mix(in srgb, var(--surface-color), white 20%);
+}
+
+/* Services Section */
+.services .service-item {
+  border: none;
+  box-shadow: var(--neumorphic-shadow-outset);
+  transition: all 0.3s ease;
+}
+
+.services .service-item:hover {
+  box-shadow: 
+    12px 12px 24px color-mix(in srgb, var(--surface-color), black 20%),
+    -12px -12px 24px color-mix(in srgb, var(--surface-color), white 20%);
+}
+
+
+
+/* Footer Newsletter Form */
+.footer .footer-newsletter .newsletter-form {
+  box-shadow: var(--neumorphic-shadow-outset);
+  border: none;
+}
+
+
+/* Portfolio Items */
+.portfolio .portfolio-item {
+  box-shadow: var(--neumorphic-shadow-outset);
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item:hover {
+  box-shadow: 
+    12px 12px 24px color-mix(in srgb, var(--surface-color), black 20%),
+    -12px -12px 24px color-mix(in srgb, var(--surface-color), white 20%);
+}
+
+/* Team Members */
+.team .member .member-info {
+  box-shadow: var(--neumorphic-shadow-outset);
+}
+
+/* Testimonials */
+.testimonials .testimonial-item p {
+  box-shadow: var(--neumorphic-shadow-outset);
+}
+
+/* Service Details Boxes */
+.service-details .service-box {
+  box-shadow: var(--neumorphic-shadow-outset);
+}
+
+/* Adjust Background Colors for Better Contrast */
+.light-background {
+  --surface-color: #f0f0f0;
+}
+
+.dark-background {
+  --surface-color: #2a2a2a;
+}
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #059652;
+  background: #96050c;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
